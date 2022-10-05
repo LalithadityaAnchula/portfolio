@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 80%;
+}
+
+main {
+  margin: 4rem 6rem 0 6rem;
+}
+
+section {
+  margin: 1rem;
+  padding: 0.5rem;
+  min-height: 75vh;
+}
+
+.discription {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  height: 4rem;
+}
+
+.ending {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero-section .hero-content {
+  max-width: 60%;
+}
+
+.hero-section .hero-content-title {
+  font-size: 5rem;
+}
+
+.hero-content-title::after {
+  content: ".";
+}
+
+.hero-content .discription {
+  font-size: 2rem;
+}
+
+.hero-content .discription::after {
+  content: "...";
+}
+
+.hero-section .hero-image img {
+  width: 20.4rem;
+  height: 28.8rem;
+  filter: grayscale(100%);
+  border-radius: 2rem;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-section .hero-image img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: 3rem auto;
+  gap: 2rem;
+  min-width: 100%;
+}
+
+.card {
+  text-align: center;
+  width: 40%;
+  padding: 2rem;
+  background-color: #141e27;
+  border-radius: 2rem;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-image {
+  width: 50%;
+  height: 40%;
+}
+
+.card-image img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 3rem;
+}
+
+.card-title::after {
+  text-align: center;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background: white;
+  border-radius: 1rem;
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: all 0.5s ease-out;
+}
+
+.cards .card:hover {
+  transform: scale(1.1);
+  transform-origin: bottom left;
+}
+
+.cards .card:hover > .card-title::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.skill-list-item {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 20%;
+  cursor: zoom-in;
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+.skill-list-item:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.subtitle {
+  font-size: 6rem;
+}
+
+.work-cards .card {
+  width: 90%;
+  height: 50%;
+  margin: 1rem auto 2rem auto;
+  cursor : pointer;
+  transform: scale(1);
+}
+
+.work-cards .card:hover>.wrap .content .card-title::after {
+  margin-bottom: 1rem;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.work-cards .card:hover{
+  transform: scale(1.1);
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1rem;
+}
+
+.wrap .card-image {
+  width: 30%;
+  transform : scale(0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.work-cards .card:hover>.wrap .card-image {
+  transform: scaleX(1.1);
+}
+
+.work-discription{
+  margin : 4rem auto 1rem auto;
+  font-size: 1.6rem;
+}
+
+
+.wrap .content {
+  width: 60%;
+}
+
+.wrap .content .card-title {
+  font-size: 3rem;
+}
+
+.wrap .content .work-details {
+  font-size: 0.8rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1045px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0.2rem;
+    padding: 0.1rem;
+  }
+  section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .hero-content {
+    max-width: 100%;
+  }
+  .hero-section .hero-content-title {
+    font-size: 4rem;
+  }
+  .ending .subtitle {
+    font-size: 3rem;
+  }
+  .work-cards .card {
+    width: 80%;
+  }
+  .wrap {
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrap .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main {
+    margin-top: 2rem;
+  }
+  section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .hero-section .hero-image img {
+    width: 17rem;
+    height: 24rem;
+  }
+  .hero-section .hero-content-title {
+    font-size: 2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .card -title {
+    font-size: 2rem;
+  }
+}
