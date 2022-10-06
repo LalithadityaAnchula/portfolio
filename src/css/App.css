@@ -192,7 +192,6 @@ section {
 .work-cards .card:hover>.wrap .content .card-title::after {
   margin-bottom: 1rem;
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .work-cards .card:hover{
