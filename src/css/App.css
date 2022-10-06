@@ -139,7 +139,6 @@ section {
 
 .cards .card:hover {
   transform: scale(1.01);
-  transform-origin: bottom left;
 }
 
 .cards .card:hover > .card-title::after {
