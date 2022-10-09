@@ -1,0 +1,26 @@
+img {
+  animation: appear 1s;
+}
+
+nav {
+  animation: appear 1s;
+}
+
+.hero-content-title {
+  animation: appear 1s;
+}
+
+.card {
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
