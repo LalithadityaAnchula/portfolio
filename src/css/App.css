@@ -88,7 +88,7 @@ section {
 
 .cards {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
@@ -103,8 +103,10 @@ section {
   padding: 2rem;
   background-color: #141e27;
   border-radius: 2rem;
+  height: auto;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .card-image {
@@ -135,6 +137,19 @@ section {
   transform: scale(0);
   transform-origin: bottom left;
   transition: all 0.5s ease-out;
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card-content-item {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card-content-item span {
+  margin: auto 0.2rem;
 }
 
 .cards .card:hover {
@@ -184,17 +199,17 @@ section {
   width: 90%;
   height: 50%;
   margin: 1rem auto 2rem auto;
-  cursor : pointer;
+  cursor: pointer;
   transform: scale(1);
 }
 
-.work-cards .card:hover>.wrap .content .card-title::after {
+.work-cards .card:hover > .wrap .content .card-title::after {
   margin-bottom: 1rem;
   transform: scaleX(1);
 }
 
-.work-cards .card:hover{
-  transform: scale(1.01)
+.work-cards .card:hover {
+  transform: scale(1.01);
 }
 
 .wrap {
@@ -208,19 +223,18 @@ section {
 
 .wrap .card-image {
   width: 30%;
-  transform : scale(0.8);
+  transform: scale(0.8);
   transition: all 0.5s ease-in-out;
 }
 
-.work-cards .card:hover>.wrap .card-image {
+.work-cards .card:hover > .wrap .card-image {
   transform: scaleX(1.1);
 }
 
-.work-discription{
-  margin : 4rem auto 1rem auto;
+.work-discription {
+  margin: 4rem auto 1rem auto;
   font-size: 1.6rem;
 }
-
 
 .wrap .content {
   width: 60%;

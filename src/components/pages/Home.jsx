@@ -1,5 +1,4 @@
 import Typewriter from "typewriter-effect";
-import "../../css/App.css";
 import SkillCard from "../shared/SkillCard";
 
 export default function Home() {

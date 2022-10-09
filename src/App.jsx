@@ -4,6 +4,7 @@ import Work from "./components/pages/Work";
 import Projects from "./components/pages/Projects";
 import Footer from "./components/shared/Footer";
 import { Routes, Route } from "react-router-dom";
+import "./css/App.css";
 
 export default function App() {
   return (
