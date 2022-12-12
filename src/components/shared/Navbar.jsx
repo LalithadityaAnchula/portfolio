@@ -1,3 +1,4 @@
+import React from 'react';
 import "../../css/Navbar.css";
 import { MdComputer } from "react-icons/md";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";

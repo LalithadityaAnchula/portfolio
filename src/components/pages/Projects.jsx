@@ -1,3 +1,4 @@
+import React  from 'react';
 import ProjectCard from "../shared/ProjectCard";
 export default function Projects() {
   return (

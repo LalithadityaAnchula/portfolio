@@ -1,3 +1,4 @@
+import React from 'react';
 import WorkCard from "../shared/WorkCard";
 export default function Work() {
   return (

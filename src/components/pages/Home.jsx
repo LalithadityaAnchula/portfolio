@@ -1,3 +1,4 @@
+import React from 'react';
 import Typewriter from "typewriter-effect";
 import SkillCard from "../shared/SkillCard";
 
@@ -73,7 +74,7 @@ export default function Home() {
           I occasionally take on few intresting projects.
         </h1>
         <p style={{ fontSize: "1.6rem" }}>
-          Have work or Job for me 😍, please feel free to ping me on{" "}
+          Have work or Job for me <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">😍</span>, please feel free to ping me on{" "}
           <u>Linkedin</u>
         </p>
       </section>

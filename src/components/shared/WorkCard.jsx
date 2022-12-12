@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function WordCard({ title, content, discription, imageName }) {
   return (
     <div className="card">

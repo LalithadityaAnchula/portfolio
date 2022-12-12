@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function SkillCard({ title, content }) {
   return (
     <div className="card">

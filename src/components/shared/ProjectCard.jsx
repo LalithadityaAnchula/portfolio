@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaGithubSquare } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 

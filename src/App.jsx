@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from "./components/shared/Navbar";
 import Home from "./components/pages/Home";
 import Work from "./components/pages/Work";
